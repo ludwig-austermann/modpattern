@@ -9,11 +9,11 @@ It's primary goal is to create make this:
 The function with the signature 
 `modpattern(size, body, dx: 0pt, dy: 0pt, background: none)`
 has the following parameters:
-- `size` is as size for patterns
-- `body` is the inside/body/content of the pattern
+- `size` is as size for tiling
+- `body` is the inside/body/content of the tiling
 - `dx`, `dy` allow for translations
 - `background` allows any type allowed in the box fill argument. It gets applied first
 
-Notice that, in contrast to typst patterns, size is a positional argument.
+Notice that, in contrast to typst `tiling`s, size is a positional argument.
 
 Take a look at the example directory, to understand how to use this and to see the reasoning behind the `background` argument.

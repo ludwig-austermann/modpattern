@@ -19,8 +19,8 @@
 #set text(8pt)
 #table(
   columns: 3,
-  [], [pattern], [modpattern],
+  [], [tiling], [modpattern],
   ..patterncontents.pairs().map(
-    ((k, v)) => (k, rect(fill: pattern(size: (10pt, 5pt), v)), rect(fill: modpattern((10pt, 5pt), v)))
+    ((k, v)) => (k, rect(fill: tiling(size: (10pt, 5pt), v)), rect(fill: modpattern((10pt, 5pt), v)))
   ).flatten()
 )

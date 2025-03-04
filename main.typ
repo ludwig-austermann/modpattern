@@ -3,7 +3,7 @@
 /// - body is the inside/body/content of the pattern
 /// - dx, dy allow for translations
 /// - background allows any type allowed in the box fill argument. It gets applied first
-#let modpattern(size, body, dx: 0pt, dy: 0pt, background: none) = pattern(
+#let modpattern(size, body, dx: 0pt, dy: 0pt, background: none) = tiling(
   size: size,
   {
     if background != none {
