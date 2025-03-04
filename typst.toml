@@ -7,5 +7,5 @@ license = "MIT"
 description = "Easily create patterns in typst."
 repository = "https://github.com/ludwig-austermann/modpattern"
 exclude = ["examples"]
-keywords = ["pattern", "styling"]
+keywords = ["pattern", "styling", "tiling"]
 compiler = "0.11.0"
