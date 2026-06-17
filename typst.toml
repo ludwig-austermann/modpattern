@@ -1,6 +1,6 @@
 [package]
 name = "modpattern"
-version = "0.1.0"
+version = "0.2.0"
 entrypoint = "main.typ"
 authors = ["Ludwig Austermann"]
 license = "MIT"
@@ -8,4 +8,22 @@ description = "Easily create patterns in typst."
 repository = "https://github.com/ludwig-austermann/modpattern"
 exclude = ["examples"]
 keywords = ["pattern", "styling", "tiling"]
-compiler = "0.11.0"
+compiler = "0.15.0"
+
+
+[tool.typpkg]
+exclude = ["examples/*", "CHANGELOG.md"]
+include = ["examples/*.typ", "examples/comparison.png"]
+replace_imports = ["examples/*.typ"]
+typst_compile = [
+  {path = "examples/*.typ", root = '.'},
+  {path = "examples/comparison.typ", root = '.', format = "png"}
+]
+
+[tool.utpm]
+exclude = [
+  "examples/",
+  "CHANGELOG.md",
+  # "!examples/*.typ",
+  # "!examples/comparison.png",
+]
