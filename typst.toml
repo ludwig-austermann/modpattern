@@ -4,7 +4,7 @@ version = "0.2.0"
 entrypoint = "main.typ"
 authors = ["Ludwig Austermann"]
 license = "MIT"
-description = "Easily create patterns in typst."
+description = "Fixing tilings/patterns on its edges."
 repository = "https://github.com/ludwig-austermann/modpattern"
 exclude = ["examples"]
 keywords = ["pattern", "styling", "tiling"]
@@ -13,7 +13,7 @@ compiler = "0.15.0"
 
 [tool.typpkg]
 exclude = ["examples/*", "CHANGELOG.md"]
-include = ["examples/*.typ", "examples/comparison.png"]
+include = ["examples/comparison.png"]
 replace_imports = ["examples/*.typ"]
 typst_compile = [
   {path = "examples/*.typ", root = '.'},
@@ -24,6 +24,6 @@ typst_compile = [
 exclude = [
   "examples/",
   "CHANGELOG.md",
-  # "!examples/*.typ",
-  # "!examples/comparison.png",
+  "!examples/*.typ",
+  "!examples/comparison.png",
 ]
