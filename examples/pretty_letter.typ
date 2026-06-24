@@ -12,7 +12,7 @@
 #set page(
   background: {
     nice-border(10mm, 20mm, modpattern(
-      patsize,
+      size: patsize,
       {
         place(line(start: (0%,0%), end: (100%, 100%), stroke: 2pt))
         place(line(start: (100%,0%), end: (0%, 100%), stroke: 2pt))
@@ -20,12 +20,12 @@
       background: lred,
     ))
     nice-border(8mm, 11.2mm, modpattern(
-      patsize,
+      size: patsize,
       line(start: (0%,0%), end: (100%, 100%), stroke: 2pt),
       background: lred
     ))
     nice-border(19.8mm, 22mm, modpattern(
-      patsize,
+      size: patsize,
       line(start: (100%,0%), end: (0%, 100%), stroke: 2pt),
       background: lred
     ))
@@ -35,7 +35,7 @@
 #set par(justify: true)
 #show heading: it => {
   set text(30pt, fill: modpattern(
-      (10pt, 5pt),
+      size: (10pt, 5pt),
       {
         place(line(start: (0%,0%), end: (100%, 100%)))
         place(line(start: (100%,0%), end: (0%, 100%)))
